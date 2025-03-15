@@ -5,8 +5,9 @@ import React from 'react'
 
 function LandingPage() {
   return (
-    <div>
-        <h1>HOEM PAGE BROILY</h1>
+    <div className='bg-[#F7FF58]'>
+        <h1>HOME PAGE BROILY</h1>
+        <div><div><img src="/images/Broily Logo.png" alt="Logo" /></div><div></div></div>
     </div>
   )
 }
