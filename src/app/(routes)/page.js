@@ -3,8 +3,9 @@ import LandingPage from "./landingPage/LandingPage";
 
 export default function Home() {
   return (
-    <div className="bg-[#F7FF58] grid grid-rows-[20px_1fr_20px] min-h-screen p-2 pb-20 gap-16 sm:py-10 px-20 font-[family-name:var(--font-geist-sans)]">
+    <div className=" ">
       <LandingPage />
+
      {/*  <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
