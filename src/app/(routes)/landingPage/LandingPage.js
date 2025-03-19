@@ -53,7 +53,8 @@ function LandingPage() {
               </p>
               <button
                 onClick={toggleModal}
-                className="mt-5 px-5 py-1 bg-[#F34213] text-white rounded-lg hover:bg-[#F34213] transition"
+                className="mt-5 px-5 py-1 bg-[#F34213] text-white rounded-lg hover:bg-[#F34213] transition cursor-pointer"
+                style={{ fontFamily: "var(--font-comic)" }}
               >
                 Notify Me
               </button>
