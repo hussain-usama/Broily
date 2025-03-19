@@ -34,7 +34,7 @@ const WhyThoughModal = ({ isOpen, onClose }) => {
         <p className="text-center font-bold">
           Join the waitlist now and be part of the first wave of men redefining what it means to connect online.
         </p>
-        <button className="w-full bg-black text-white py-2 rounded hover:bg-orange-600">Join Now!</button>
+        <button className="w-full bg-black text-white py-2 rounded hover:bg-[#F34213]">Join Now!</button>
       </div>
     </Modal>
   );
