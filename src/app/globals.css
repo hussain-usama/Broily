@@ -6,6 +6,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-impact: "fontImpact", Impact, sans-serif;
+  --font-concert: "fontConcertOne", "Concert One", sans-serif;
+  --font-comic: "fontComic", "Comic Sans MS", cursive;
+  --font-footer: "fontArishmaKoshi", "Arima Koshi", cursive;
+  --font-arialRounded: "fontArialRounded", "Arial Rounded", cursive;
+  --font-appleSymbols: "fontAppleSymbols", "Symbols", cursive;
 }
 
 @theme inline {
@@ -26,4 +32,46 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "fontImpact";
+  src: url("/fonts/impact.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fontComic";
+  src: url("/fonts/COMIC.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fontConcertOne";
+  src: url("/fonts/ConcertOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fontArishmaKoshi";
+  src: url("/fonts/ArimaKoshi-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fontArialRounded";
+  src: url("/fonts/arialroundedmtbold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fontAppleSymbols";
+  src: url("/fonts/symbols.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }

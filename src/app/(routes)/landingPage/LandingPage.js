@@ -23,7 +23,7 @@ function LandingPage() {
             className="h-16 w-16 sm:h-24 sm:w-24"
           />
 
-          <button className="bg-black text-white px-4 py-2 hover:bg-[#F34213] transition relative group">
+          <button className="bg-black text-white px-4 py-2 hover:bg-[#F34213] transition relative group cursor-pointer" style={{ fontFamily: "var(--font-arialRounded)" }}>
             Investors
             <span className="absolute left-20 w-full text-center text-xs text-white bg-black opacity-0 group-hover:opacity-100 transition p-1 rounded-md mt-1">
               Why Broily? Click to find out.
@@ -34,14 +34,14 @@ function LandingPage() {
         <div className="items-center w-full max-w-6xl mt-8 px-4 sm:px-6 md:px-20">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-7 text-center md:text-left">
-              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-black leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-black leading-tight " style={{ fontFamily: "var(--font-impact)" }}>
                 A Social Space That Puts You{" "}
                 <span className="text-black">FIRST.</span>
               </h1>
-              <p className="text-lg font-semibold text-black mt-6">
+              <p className="text-lg font-semibold text-black mt-6" style={{ fontFamily: "var(--font-concert)" }} >
                 Real Users. Real Conversations. For Men.
               </p>
-              <p className="text-gray-700 mt-4">
+              <p className="text-gray-700 mt-4" >
                 Broily is a verified, invite-only social platform for men,
                 designed to foster real conversations, authentic connections,
                 and a mentally healthy online experience, free from spam, fake
@@ -53,7 +53,8 @@ function LandingPage() {
               </p>
               <button
                 onClick={toggleModal}
-                className="mt-5 px-5 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
+                className="mt-5 px-5 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition cursor-pointer"
+                style={{ fontFamily: "var(--font-comic)" }}
               >
                 Notify Me
               </button>
@@ -75,12 +76,12 @@ function LandingPage() {
             <img
               src="/images/Apple AppStore.png"
               alt="App Store"
-              className="w-full max-w-[180px] sm:max-w-[200px]"
+              className="w-full max-w-[180px] sm:max-w-[200px] cursor-pointer"
             />
             <img
               src="/images/Google PlayStore.png"
               alt="Google Play"
-              className="w-full max-w-[180px] sm:max-w-[200px]"
+              className="w-full max-w-[180px] sm:max-w-[200px] cursor-pointer"
             />
           </div>
         </div>

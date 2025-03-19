@@ -15,10 +15,10 @@ const Footer = () => {
   const [isWhyThoughOpen, setIsWhyThoughOpen] = useState(false);
 
   return (
-    <footer className="bg-[#021827] text-[#B4E1FF] py-2 px-6 md:px-4">
+    <footer className="bg-[#021827] text-[#B4E1FF] py-2 px-6 md:px-4" style={{ fontFamily: "var(--font-footer)" }}>
       <div className="grid grid-cols-1 md:grid-cols-12 px-6 md:px-2 gap-2">
         <div className="md:col-span-6 md:text-center">
-          <div className="flex justify-start gap-3 mb-2">
+          <div className="flex gap-3 mb-2 justify-center sm:justify-start">
             {[
               { href: "https://www.facebook.com/BroilyOfficial", icon: FaFacebookF , title: "Facebook" },
               { href: "https://www.instagram.com/BroilyOfficial", icon: FaInstagram, title: "Instagram" },

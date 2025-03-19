@@ -91,7 +91,7 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
           <div className="relative">
             <div className="flex gap-2 items-center bg-gray-100 p-2 rounded">
               <input type="text" value={inviteLink} readOnly className="bg-transparent text-gray-700 flex-1" />
-              <button onClick={handleCopyLink} className="bg-black text-white px-3 py-1 rounded hover:bg-[#F34213]">
+              <button onClick={handleCopyLink} className="bg-black text-white px-3 py-1 rounded hover:bg-[#F34213] cursor-pointer">
                 Copy
               </button>
             </div>
