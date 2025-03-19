@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import WhyThoughModal from "./Modals/WhyThoughModal";
+import { useState } from "react";
 import {
   FaFacebook,
   FaInstagram,
@@ -9,6 +11,9 @@ import {
 } from "react-icons/fa6";
 
 const Footer = () => {
+
+  const [isWhyThoughOpen, setIsWhyThoughOpen] = useState(false);
+
   return (
     <footer className="bg-[#071B2F] text-white py-2 px-6  md:px-4">
       <div className="grid grid-cols-1 md:grid-cols-12  px-6 md:px-2 gap-2">
@@ -57,21 +62,21 @@ const Footer = () => {
           <div className="text-center text-sm text-gray-400 mt-1">
             © 2025 Broily. All Rights Reserved |{" "}
             <Link href="#" className="hover:underline">
-              Participate
-            </Link>{" "}
-            |
-            <Link href="mailto:support@broily.club" className="hover:underline">
-              {" "}
-              Support
-            </Link>{" "}
-            |
-            <Link href="#" className="hover:underline">
-              {" "}
-              Why Though?
+              Participate {" "}
             </Link>
+            | {" "}
+            <Link href="mailto:support@broily.club" className="hover:underline">
+              Support {" "}
+            </Link>
+            |{" "}
+            {/* <Link href="#" className="hover:underline">
+              Why Though?
+            </Link> */}
+            <button onClick={() => setIsWhyThoughOpen(true)} className="hover:underline">Why Though?</button>
           </div>
         </div>
       </div>
+      <WhyThoughModal isOpen={isWhyThoughOpen} onClose={() => setIsWhyThoughOpen(false)} />
     </footer>
   );
 };

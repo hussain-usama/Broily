@@ -1,8 +1,18 @@
-// "use client"
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
 import Footer from "../../components/Footer";
+import NotifyMeModal from "../../components/Modals/NotifyMeModal";
 function LandingPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+    setIsSubmitted(false);
+  };
+
+
   return (
     <>
       <div className="bg-[#F7FF58] p-2 pb-20 gap-4 sm:py-10 px-20 ">
@@ -47,7 +57,7 @@ function LandingPage() {
                 Join us as we redefine what it means for men to connect online.
                 Signup below to confirm your invite when we launch!
               </p>
-              <button className="mt-5 px-5 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+              <button  onClick={toggleModal}  className="mt-5 px-5 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
                 Notify Me
               </button>
             </div>
@@ -66,7 +76,7 @@ function LandingPage() {
           </div>
           <div className="flex justify-end bg-[#F7FF58] my-10 gap-6 px-6 md:px-20">
                 <img
-                  src="/images/Google PlayStore.png"
+                  src="/images/Apple AppStore.png"
                   alt="App Store"
                   width={200}
                   height={80}
@@ -86,6 +96,9 @@ function LandingPage() {
 
       <div>
         <Footer />
+      </div>
+      <div>
+      <NotifyMeModal isOpen={isModalOpen}  onClose={() => setIsModalOpen(false)} toggleModal={toggleModal} />
       </div>
     </>
   );
