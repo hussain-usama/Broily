@@ -15,12 +15,12 @@ function LandingPage() {
 
   return (
     <>
-      <div className="bg-[#F7FF58] p-4 pb-20 sm:py-10 sm:px-10 md:px-20">
+      <div className="bg-[#F7FF58] p-4 pb-20 sm:py-8 sm:px-10 md:px-20">
         <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-4">
           <img
             src="/images/Broily Logo.png"
             alt="Logo"
-            className="h-16 w-16 sm:h-24 sm:w-24"
+            className="h-20 w-20 sm:h-30 sm:w-30"
           />
 
           <button className="bg-black text-white px-4 py-2 hover:bg-[#F34213] transition relative group cursor-pointer" style={{ fontFamily: "var(--font-arialRounded)" }}>
@@ -53,8 +53,7 @@ function LandingPage() {
               </p>
               <button
                 onClick={toggleModal}
-                className="mt-5 px-5 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition cursor-pointer"
-                style={{ fontFamily: "var(--font-comic)" }}
+                className="mt-5 px-5 py-1 bg-[#F34213] text-white rounded-lg hover:bg-[#F34213] transition"
               >
                 Notify Me
               </button>
