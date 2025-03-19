@@ -39,7 +39,7 @@ const Modal = ({
         <div className="flex justify-between mt-6">
          {onClose   &&( <button
             onClick={onClose}
-            className="bg-gray-300 px-4 py-2 rounded hover:bg-gray-400"
+            className="bg-gray-300 text-[#021827] px-4 py-2 rounded hover:bg-gray-400"
           >
             {closeText}
           </button>)}

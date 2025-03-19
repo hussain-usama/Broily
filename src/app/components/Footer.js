@@ -42,15 +42,15 @@ const Footer = () => {
         <div className="md:col-span-6 flex justify-end">
           <div className="text-center text-sm text-gray-400 mt-1">
             © 2025 Broily. All Rights Reserved |{" "}
-            <Link href="#" className="hover:underline">
+            <Link href="#" className="hover:underline hover:text-[#F34213] transition">
               Participate{" "}
             </Link>
             |{" "}
-            <Link href="mailto:support@broily.club" className="hover:underline">
+            <Link href="mailto:support@broily.club" className="hover:underline hover:text-[#F34213] transition">
               Support{" "}
             </Link>
             |{" "}
-            <button onClick={() => setIsWhyThoughOpen(true)} className="hover:underline">
+            <button onClick={() => setIsWhyThoughOpen(true)} className="hover:underline hover:text-[#F34213] transition">
               Why Though?
             </button>
           </div>
