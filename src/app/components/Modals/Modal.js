@@ -23,7 +23,7 @@ const Modal = ({
       >
         {/* Modal Header */}
         <div className="flex justify-between items-left mb-4">
-          <h2 className="text-2xl font-bold text-black">{title}</h2>
+          <h2 className="text-2xl font-bold text-[#021827]">{title}</h2>
           <button
             className="text-gray-600 hover:text-red-600 text-xl"
             onClick={onClose}
@@ -46,7 +46,7 @@ const Modal = ({
           {onSubmit && (
             <button
               onClick={onSubmit}
-              className="bg-black text-white px-4 py-2 rounded-lg hover:bg--[#F34213] transition"
+              className="bg-[#021827] text-white px-4 py-2 rounded-lg hover:bg-[#F34213] transition"
             >
               {submitText}
             </button>
