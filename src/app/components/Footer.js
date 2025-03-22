@@ -15,7 +15,7 @@ const Footer = () => {
   const [isWhyThoughOpen, setIsWhyThoughOpen] = useState(false);
 
   return (
-    <footer className="bg-[#021827] text-[#B4E1FF] py-2 px-6 md:px-4" style={{ fontFamily: "var(--font-footer)" }}>
+    <footer className="bg-[#021827]  text-[#B4E1FF] py-2 px-6 md:px-4" style={{ fontFamily: "var(--font-footer)" }}>
       <div className="grid grid-cols-1 md:grid-cols-12 px-6 md:px-2 gap-2">
         <div className="md:col-span-6 md:text-center">
           <div className="flex gap-3 mb-2 justify-center sm:justify-start">
@@ -30,7 +30,7 @@ const Footer = () => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-7 h-7 flex items-center justify-center bg-[#B4E1FF] rounded-md"
+                className="w-7 h-7 flex items-center justify-center bg-[#B4E1FF] rounded-md hover:bg-[#F34213]"
                 title={`Follow us on ${title}`}
               >
                 <Icon size={18} className="text-[#021827]" />
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
 
         <div className="md:col-span-6 flex justify-end">
-          <div className="text-center text-sm text-gray-400 mt-1">
+          <div className="text-center text-sm text-white mt-1">
             © 2025 Broily. All Rights Reserved |{" "}
             <Link href="#" className="hover:underline hover:text-[#F34213] transition">
               Participate{" "}
@@ -50,9 +50,9 @@ const Footer = () => {
               Support{" "}
             </Link>
             |{" "}
-            <button onClick={() => setIsWhyThoughOpen(true)} className="hover:underline hover:text-[#F34213] transition">
+            <Link  href="/whyBroily" className="hover:underline hover:text-[#F34213] transition">
               Why Though?
-            </button>
+            </Link>
           </div>
         </div>
       </div>

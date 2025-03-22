@@ -97,12 +97,12 @@ function LandingPage() {
             <img
               src="/images/Apple AppStore.png"
               alt="App Store"
-              className="w-full max-w-[180px] sm:max-w-[200px] cursor-pointer"
+              className="w-full max-w-[180px] sm:max-w-[200px]"
             />
             <img
               src="/images/Google PlayStore.png"
               alt="Google Play"
-              className="w-full max-w-[180px] sm:max-w-[200px] cursor-pointer"
+              className="w-full max-w-[180px] sm:max-w-[200px]"
             />
           </div>
         </div>
