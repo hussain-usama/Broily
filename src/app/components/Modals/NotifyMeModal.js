@@ -6,7 +6,7 @@ import { db, collection, addDoc } from "../../../../firebaseConfig"; // Import F
 const NotifyMeModal = ({ isOpen, onClose }) => {
   const [submitted, setSubmitted] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
-  const inviteLink = "https://broily.com/whyBroily";
+  const inviteLink = "https://broily.club/whyBroily";
 
   const initialFormState = {
     name: "",
