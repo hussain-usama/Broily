@@ -98,17 +98,17 @@ function WhyBroily() {
 
           {/* Problem Statement Accordion */}
           <div className="my-10">
-            <button
+            <p
               onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center font-bold justify-between w-full p-3  sm:text-2xl text-[#021827] transition-all cursor-pointer"
+              className="flex items-center font-bold justify-between w-full p-3 text-lg  sm:text-3xl text-[#021827] transition-all cursor-pointer"
               style={{ fontFamily: "var(--font-arialRounded)" }}
             >
-              <p className=" font-bold text-lg sm:text-2xl">
+             
                
                 Problem Statement
-              </p>
+             
               {isOpen ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
-            </button>
+            </p>
 
             {isOpen && (
               <div className="mt-3 p-3 text-[#021827] text-sm sm:text-base">
