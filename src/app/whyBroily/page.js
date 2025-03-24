@@ -122,7 +122,7 @@ function WhyBroily() {
                     Caring Common project highlights a growing trend: men are
                     becoming more socially isolated, lacking spaces where they
                     can engage in real, supportive relationships.
-                  </p>
+                  </p>  <br />
                   <p className=" text-[#021827]">
                     While society encourages men to be strong, self-sufficient,
                     and resilient, it rarely provides them with structured
@@ -130,7 +130,7 @@ function WhyBroily() {
                     other, and build meaningful friendships. The result? A
                     generation of men facing disconnection, loneliness, and a
                     lack of authentic social spaces.
-                  </p>
+                  </p> <br />
                   <p className=" text-[#021827]">
                     At the same time, mainstream social media, which should have
                     solved this issue, is actively making it worse.
