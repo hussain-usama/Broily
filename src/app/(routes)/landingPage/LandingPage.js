@@ -2,9 +2,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
-import Footer from "../../components/Footer";
+import Footer from "../../components/GeneralComponents/Footer";
 import NotifyMeModal from "../../components/Modals/NotifyMeModal";
-import Link from "next/link";
+import Header from "@/app/components/GeneralComponents/Header";
+
 function LandingPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -47,28 +48,11 @@ function LandingPage() {
         <meta name="twitter:image" content="/images/Broily-og-image.png" />
       </Head>
 
-      <div className="bg-[#F7FF58] p-4 pb-20 sm:py-8 sm:px-10 md:px-20 flex justify-center">
+      <div className="bg-[#F7FF58] p-3 pb-20 sm:py-6 sm:px-10 md:px-20 flex justify-center">
         <div className="w-full max-w-6xl">
-          <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-4">
-            <img
-              src="/images/Broily Logo.png"
-              alt="Logo"
-              className="h-20 w-20 sm:h-30 sm:w-30"
-            />
+        <Header showInvestorsBtn={true}/>
 
-            <Link
-              href="mailto:support@broily.club"
-              className="bg-[#021827] text-white px-4 py-2 hover:bg-[#F34213] transition relative group cursor-pointer"
-              style={{ fontFamily: "var(--font-arialRounded)" }}
-            >
-              Investors
-              <span className="absolute left-20 w-full text-center text-xs text-white bg-[#021827] opacity-0 group-hover:opacity-100 transition p-1 rounded-md mt-1">
-                Why Broily? Click to find out.
-              </span>
-            </Link>
-          </div>
-
-          <div className="items-center w-full max-w-6xl mt-8 px-4 sm:px-6 md:px-20">
+          <div className="items-center w-full max-w-6xl mt-5 px-4 sm:px-6 md:px-20">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
               <div className="md:col-span-7 text-center md:text-left">
                 <h1
@@ -78,19 +62,29 @@ function LandingPage() {
                   A Social Space That Puts You{" "}
                   <span className="text-[#021827]">FIRST.</span>
                 </h1>
+
+                <div className="block md:hidden flex justify-center relative">
+                  <img
+
+                    src="/images/Mobile View Mockup.png"
+                    alt="Broily Mobile"
+                    className="w-40 h-auto mt-6"
+                  />
+                </div>
+
                 <p
                   className="text-2xl text-[#021827] mt-6"
                   style={{ fontFamily: "var(--font-concert)" }}
                 >
                   Real Users. Real Conversations. For Men.
                 </p>
-                <p className="text-gray-700 mt-4">
+                <p className="text-[#021827] mt-4" style={{ fontFamily: "var(--font-appleSymbols)" }}>
                   Broily is a verified, invite-only social platform for men,
                   designed to foster real conversations, authentic connections,
                   and a mentally healthy online experience, free from spam, fake
                   accounts, and exploitative algorithms.
                 </p>
-                <p className="text-gray-700 mt-4">
+                <p className="text-[#021827] mt-4" style={{ fontFamily: "var(--font-appleSymbols)" }}>
                   Join us as we redefine what it means for men to connect
                   online. Signup below to confirm your invite when we launch!
                 </p>
@@ -113,8 +107,8 @@ function LandingPage() {
                 />
               </div>
             </div> */}
-
-              <div className="md:col-span-5 flex justify-center relative">
+              {/* 
+              <div className="md:col-span-5 md:hidden flex justify-center relative">
                 <div
                   className="relative w-300 h-[100%] bg-contain bg-no-repeat bg-center "
                   style={{
@@ -126,10 +120,27 @@ function LandingPage() {
                     onClick={toggleModal}
                     src="/images/Broily Logo.png"
                     alt="Broily"
+                    className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-30 h-30 md:hidden"
+                  />
+                </div>
+              </div> */}
+
+              <div className="md:col-span-5 hidden md:flex justify-center relative">
+                <div
+                  className="relative w-300 h-[100%] bg-contain bg-no-repeat bg-center"
+                  style={{
+                    backgroundImage: "url('/images/Mobile Mockup Without Logo (1).png')",
+                  }}
+                >
+                  <img
+                    onClick={toggleModal}
+                    src="/images/Broily Logo.png"
+                    alt="Broily"
                     className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-30 h-30"
                   />
                 </div>
               </div>
+
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-end bg-[#F7FF58] my-10 gap-4">
@@ -148,7 +159,10 @@ function LandingPage() {
         </div>
       </div>
 
-      <Footer />
+      <div className="hidden md:block">
+        {/* // hide on phone , footer content is in hamburger*/}
+        <Footer />
+      </div>
       <NotifyMeModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

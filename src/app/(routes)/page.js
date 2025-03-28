@@ -3,7 +3,7 @@ import LandingPage from "./landingPage/LandingPage";
 
 export default function Home() {
   return (
-    <div className=" ">
+    <div className="bg-[#F7FF58]  ">
       <LandingPage />
     </div>
   );

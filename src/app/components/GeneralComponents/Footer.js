@@ -1,18 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import WhyThoughModal from "./Modals/WhyThoughModal";
 import { useState } from "react";
 import {
   FaFacebookF,
   FaInstagram,
-  // FaXTwitter ,
   FaLinkedin,
 } from "react-icons/fa6";
 import { RiTwitterXFill } from "react-icons/ri";
 
 const Footer = () => {
-  const [isWhyThoughOpen, setIsWhyThoughOpen] = useState(false);
+
 
   return (
     <footer
@@ -85,10 +83,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <WhyThoughModal
-        isOpen={isWhyThoughOpen}
-        onClose={() => setIsWhyThoughOpen(false)}
-      />
+      
     </footer>
   );
 };

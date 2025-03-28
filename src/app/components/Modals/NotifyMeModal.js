@@ -19,16 +19,22 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
 
   const [formData, setFormData] = useState(initialFormState);
   const [isFormValid, setIsFormValid] = useState(false);
-
+  const [formError, setFormError] = useState("");  
   useEffect(() => {
     if (isOpen) {
       setSubmitted(false);
-      setFormData(initialFormState);
+      setFormData(initialFormState); setFormError("");
     }
   }, [isOpen]);
 
+  // useEffect(() => {
+  //   setIsFormValid(Object.values(formData).every((field) => field.trim() !== "")); if (isValid) setFormError("");
+  // }, [formData]);
+
   useEffect(() => {
-    setIsFormValid(Object.values(formData).every((field) => field.trim() !== ""));
+    const isValid = Object.values(formData).every((field) => field.trim() !== "");
+    setIsFormValid(isValid);
+    if (isValid) setFormError(""); 
   }, [formData]);
 
   const handleChange = (e) => {
@@ -36,8 +42,12 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!isFormValid) return; 
+    // e.preventDefault();
+    // if (!isFormValid) return; 
+    if (!isFormValid) {
+      setFormError("⚠️ Please fill out all required fields before submitting.");
+      return;
+    }
 
     try {
       await addDoc(collection(db, "Users"), formData);
@@ -66,6 +76,7 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
       isSubmitDisabled={!isFormValid} // Disable Submit button if form is incomplete
     >
       {!submitted ? (
+        <div>
         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-100 p-4 rounded-md max-h-[400px] overflow-y-auto">
           {/* Left Side */}
           <div className="flex flex-col gap-4">
@@ -149,6 +160,14 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
             </div>
           </div>
         </form>
+         {/* Error Message */}
+         <br/>
+         {formError && (
+          <div className="col-span-2 bg-red-100 text-red-600 p-2 text-sm rounded-md">
+            {formError}
+          </div>
+        )}
+        </div>
       ) : (
         <>
           <p className="text-gray-700 mb-4 text-center">
