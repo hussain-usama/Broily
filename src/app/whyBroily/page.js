@@ -5,7 +5,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../components/GeneralComponents/Footer";
-import Header from "../components/GeneralComponents/Header";
+import Header from "../components/Header";
 function WhyBroily() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -17,16 +17,13 @@ function WhyBroily() {
   };
   return (
     <>
-      <div
-        className="bg-[#F7FF58] '
-       text-[#021827]  sm:p-5 md:p-6 flex justify-center"
-      >
-        <div className="w-full max-w-4xl">
+      <div className="bg-[#F7FF58] p-3 pb-20 sm:py-6 sm:px-10 md:px-20 flex justify-center">
+        <div>
           {/* Header Section */}
-        <Header/>
+          <Header />
 
           <h1
-            className="text-3xl sm:text-4xl md:text-5xl mb-6 text-center"
+            className="text-3xl sm:text-4xl md:text-5xl mb-6 text-left"
             style={{ fontFamily: "var(--font-arialRounded)" }}
           >
             Why Do Men Need Broily?
@@ -35,10 +32,7 @@ function WhyBroily() {
           {/* Main Content */}
           <div className="mt-8 px-4 sm:px-6 md:px-2 py-5">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-              <div
-                className="md:col-span-8 text-center md:text-left text-sm sm:text-base leading-relaxed"
-                style={{ fontFamily: "var(--font-appleSymbols)" }}
-              >
+              <div className="md:col-span-8 text-center md:text-left text-sm sm:text-base leading-relaxed">
                 <p>
                   Men today aren’t just lonelier, they’re disconnected. Society
                   expects them to be strong, to endure, to provide. But where do
@@ -110,7 +104,7 @@ function WhyBroily() {
 
             {isOpen && (
               <div className="mt-3 p-3 text-[#021827] text-sm sm:text-base">
-                <section style={{ fontFamily: "var(--font-appleSymbols)" }}>
+                <section>
                   <p className=" text-[#021827]">
                     Recent studies show that men today are experiencing an
                     alarming decline in close friendships, with over 15%
@@ -137,7 +131,7 @@ function WhyBroily() {
                   </p>
                 </section>
 
-                <section style={{ fontFamily: "var(--font-appleSymbols)" }}>
+                <section>
                   <p
                     className="my-10  text-3xl  text-[#021827]"
                     style={{ fontFamily: "var(--font-arialRounded)" }}
@@ -163,7 +157,7 @@ function WhyBroily() {
                   </p>
                 </section>
 
-                <section style={{ fontFamily: "var(--font-appleSymbols)" }}>
+                <section>
                   <div>
                     <p
                       className="my-10  text-3xl  text-[#021827]"
@@ -176,11 +170,8 @@ function WhyBroily() {
                       ways:
                     </p>
 
-                    <ol
-                      className="list-decimal pl-5 mt-2 space-y-4"
-                      style={{ fontFamily: "var(--font-appleSymbols)" }}
-                    >
-                      <li style={{ fontFamily: "var(--font-appleSymbols)" }}>
+                    <ol className="list-decimal pl-5 mt-2 space-y-4">
+                      <li>
                         They prioritize engagement metrics over real connection.
                         <ul className="list-disc pl-5 mt-2 space-y-2">
                           <li>
@@ -238,7 +229,7 @@ function WhyBroily() {
                   </div>
                 </section>
 
-                <section style={{ fontFamily: "var(--font-appleSymbols)" }}>
+                <section>
                   <div>
                     <p
                       className="my-10  text-3xl  text-[#021827]"
@@ -336,11 +327,8 @@ function WhyBroily() {
                     </div>
                   </div>
                 </section>
-                <hr className="my-8"/>
-                <section
-                  className="mt-6 space-y-6 text-[#021827]"
-                  style={{ fontFamily: "var(--font-appleSymbols)" }}
-                >
+                <hr className="my-8" />
+                <section className="mt-6 space-y-6 text-[#021827]">
                   <p>
                     {" "}
                     Men today need more than just another social platform—they

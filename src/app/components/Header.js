@@ -61,7 +61,7 @@ const Header = ({showInvestorsBtn=false}) => {
             <FaTimes />
           </button>
 
-          <ul className="text-left text-sm space-y-4 mt-3">
+          <ul className="text-left text-xl space-y-4 mt-3">
             <li>
               <Link
                 href="mailto:support@broily.club"

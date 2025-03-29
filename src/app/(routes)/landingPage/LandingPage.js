@@ -4,7 +4,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Footer from "../../components/GeneralComponents/Footer";
 import NotifyMeModal from "../../components/Modals/NotifyMeModal";
-import Header from "@/app/components/GeneralComponents/Header";
+import Header from "@/app/components/Header";
 
 function LandingPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -48,9 +48,9 @@ function LandingPage() {
         <meta name="twitter:image" content="/images/Broily-og-image.png" />
       </Head>
 
-      <div className="bg-[#F7FF58] p-3 pb-20 sm:py-6 sm:px-10 md:px-20 flex justify-center">
-        <div className="w-full max-w-6xl">
-        <Header showInvestorsBtn={true}/>
+      <div>
+        <div>
+          <Header showInvestorsBtn={true} />
 
           <div className="items-center w-full max-w-6xl mt-5 px-4 sm:px-6 md:px-20">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -65,7 +65,6 @@ function LandingPage() {
 
                 <div className="block md:hidden flex justify-center relative">
                   <img
-
                     src="/images/Mobile View Mockup.png"
                     alt="Broily Mobile"
                     className="w-40 h-auto mt-6"
@@ -78,13 +77,13 @@ function LandingPage() {
                 >
                   Real Users. Real Conversations. For Men.
                 </p>
-                <p className="text-[#021827] mt-4" style={{ fontFamily: "var(--font-appleSymbols)" }}>
+                <p className="text-[#021827] mt-4">
                   Broily is a verified, invite-only social platform for men,
                   designed to foster real conversations, authentic connections,
                   and a mentally healthy online experience, free from spam, fake
                   accounts, and exploitative algorithms.
                 </p>
-                <p className="text-[#021827] mt-4" style={{ fontFamily: "var(--font-appleSymbols)" }}>
+                <p className="text-[#021827] mt-4">
                   Join us as we redefine what it means for men to connect
                   online. Signup below to confirm your invite when we launch!
                 </p>
@@ -129,7 +128,8 @@ function LandingPage() {
                 <div
                   className="relative w-300 h-[100%] bg-contain bg-no-repeat bg-center"
                   style={{
-                    backgroundImage: "url('/images/Mobile Mockup Without Logo (1).png')",
+                    backgroundImage:
+                      "url('/images/Mobile Mockup Without Logo (1).png')",
                   }}
                 >
                   <img
@@ -140,7 +140,6 @@ function LandingPage() {
                   />
                 </div>
               </div>
-
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-end bg-[#F7FF58] my-10 gap-4">
