@@ -5,7 +5,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../components/GeneralComponents/Footer";
-import Header from "../components/Header";
+import Header from "../components/GeneralComponents/Header";
 function WhyBroily() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +17,9 @@ function WhyBroily() {
   };
   return (
     <>
-      <div className="bg-[#F7FF58] p-3 pb-20 sm:py-6 sm:px-10 md:px-20 flex justify-center">
+      <div className="bg-[#F7FF58] p-3 pb-20 sm:py-6 sm:px-10 md:px-20 ">
         <div>
-          {/* Header Section */}
+        
           <Header />
 
           <h1
