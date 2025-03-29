@@ -17,9 +17,8 @@ function WhyBroily() {
   };
   return (
     <>
-      <div className="bg-[#F7FF58] p-3 pb-20 sm:py-6 sm:px-10 md:px-20 ">
+      <div className="bg-[#F7FF58] p-3 pb-20 sm:py-6 sm:px-10 md:px-20 text-[#021827]">
         <div>
-        
           <Header />
 
           <h1
@@ -32,7 +31,7 @@ function WhyBroily() {
           {/* Main Content */}
           <div className="mt-8 px-4 sm:px-6 md:px-2 py-5">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-              <div className="md:col-span-8 text-center md:text-left text-sm sm:text-base leading-relaxed">
+              <div className="md:col-span-8    text-left md:text-left text-sm sm:text-base leading-relaxed">
                 <p>
                   Men today aren’t just lonelier, they’re disconnected. Society
                   expects them to be strong, to endure, to provide. But where do
@@ -361,7 +360,7 @@ function WhyBroily() {
           </div>
 
           <hr />
-          <section className="px-5 text-center mt-10">
+          <section className="px-5    text-left mt-10">
             <p className="font-bold">
               Join the waitlist now and be part of the first wave of men
               redefining what it means to connect online.
@@ -369,26 +368,26 @@ function WhyBroily() {
             <div className="flex flex-col sm:flex-row justify-center gap-4 my-5">
               <button
                 onClick={toggleModal}
-                className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213] text-center"
+                className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213]    text-left"
               >
                 Join Now!
               </button>
               <Link
                 href="https://survey.broily.club"
                 target="_blank"
-                className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213] text-center"
+                className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213]    text-left"
               >
                 Participate
               </Link>
               <Link
                 href="mailto:support@broily.club"
-                className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213] text-center"
+                className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213]    text-left"
               >
                 Investors
               </Link>
               <Link
                 href="https://survey.broily.club"
-                className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213] text-center"
+                className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213]    text-left"
               >
                 Support
               </Link>

@@ -50,13 +50,13 @@ function LandingPage() {
 
       <div className="bg-[#F7FF58] p-3 pb-20 sm:py-6 sm:px-10 md:px-20 flex justify-center">
         <div className="w-full max-w-6xl">
-        <Header showInvestorsBtn={true}/>
+          <Header showInvestorsBtn={true} />
 
           <div className="items-center w-full max-w-6xl mt-5 px-4 sm:px-6 md:px-20">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-              <div className="md:col-span-7 text-left">
+              <div className="md:col-span-7 ">
                 <h1
-                  className="text-3xl sm:text-4xl md:text-7xl  text-[#021827] leading-tight "
+                  className="text-3xl sm:text-4xl md:text-7xl text-center md:text-left text-[#021827] leading-tight "
                   style={{ fontFamily: "var(--font-impact)" }}
                 >
                   A Social Space That Puts You{" "}
@@ -65,7 +65,6 @@ function LandingPage() {
 
                 <div className="block md:hidden flex justify-center relative">
                   <img
-
                     src="/images/Mobile View Mockup.png"
                     alt="Broily Mobile"
                     className="w-full h-auto mt-6"
@@ -73,18 +72,22 @@ function LandingPage() {
                 </div>
 
                 <p
-                  className="text-2xl text-[#021827] mt-6"
+                  className="text-xl md:text:2xl text-[#021827] mt-6"
                   style={{ fontFamily: "var(--font-concert)" }}
                 >
-                  Real Users. Real Conversations. For Men.
+                  <span className="block sm:inline">Real Users. </span>
+                  <span className="block sm:inline">
+                    Real Conversations. For Men.
+                  </span>
                 </p>
-                <p className="text-[#021827] mt-4"       >
+
+                <p className="text-[#021827] mt-4 text-left">
                   Broily is a verified, invite-only social platform for men,
                   designed to foster real conversations, authentic connections,
                   and a mentally healthy online experience, free from spam, fake
                   accounts, and exploitative algorithms.
                 </p>
-                <p className="text-[#021827] mt-4"       >
+                <p className="text-[#021827] mt-4 text-left">
                   Join us as we redefine what it means for men to connect
                   online. Signup below to confirm your invite when we launch!
                 </p>
@@ -129,7 +132,8 @@ function LandingPage() {
                 <div
                   className="relative w-300 h-[100%] bg-contain bg-no-repeat bg-center"
                   style={{
-                    backgroundImage: "url('/images/Mobile Mockup Without Logo (1).png')",
+                    backgroundImage:
+                      "url('/images/Mobile Mockup Without Logo (1).png')",
                   }}
                 >
                   <img
@@ -140,20 +144,20 @@ function LandingPage() {
                   />
                 </div>
               </div>
-
             </div>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-end bg-[#F7FF58] my-10 gap-4">
-              <img
-                src="/images/Apple AppStore.png"
-                alt="App Store"
-                className="w-full max-w-[180px] sm:max-w-[200px]"
-              />
-              <img
-                src="/images/Google PlayStore.png"
-                alt="Google Play"
-                className="w-full max-w-[180px] sm:max-w-[200px]"
-              />
+            <div className="flex justify-center sm:justify-end w-full my-10 px-4">
+              <div className="flex flex-row gap-4">
+                <img
+                  src="/images/Apple AppStore.png"
+                  alt="App Store"
+                  className="w-auto max-w-[140px] sm:max-w-[180px]"
+                />
+                <img
+                  src="/images/Google PlayStore.png"
+                  alt="Google Play"
+                  className="w-auto max-w-[140px] sm:max-w-[180px]"
+                />
+              </div>
             </div>
           </div>
         </div>
