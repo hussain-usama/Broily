@@ -54,7 +54,7 @@ function LandingPage() {
 
           <div className="items-center w-full max-w-6xl mt-5 px-4 sm:px-6 md:px-20">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-              <div className="md:col-span-7 text-center md:text-left">
+              <div className="md:col-span-7 text-left">
                 <h1
                   className="text-3xl sm:text-4xl md:text-7xl  text-[#021827] leading-tight "
                   style={{ fontFamily: "var(--font-impact)" }}
