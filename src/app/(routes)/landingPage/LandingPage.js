@@ -94,13 +94,13 @@ function LandingPage() {
                 <button
                   onClick={toggleModal}
                   className="mt-5 px-5 py-1 bg-[#F34213] text-white border border-[#021827] rounded-lg hover:bg-[#021827] transition cursor-pointer"
-                  style={{ fontFamily: "var(--font-concert)" }}
+                  style={{ fontFamily: "var(--font-impact)" }}
                 >
                   Notify Me
                 </button>
               </div>
 
-              <div className="md:col-span-5 flex justify-center">
+              <div className="md:col-span-5 flex justify-center hidden md:block">
               <div className="relative w-40 sm:w-48 md:w-64 flex justify-center">
                 <Image
                   src="/images/MobileMockup.png"

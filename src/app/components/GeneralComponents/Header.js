@@ -99,12 +99,17 @@ const Header = ({showInvestorsBtn=false}) => {
               </Link>
             </li>
             <li>
-              <Link
-              
-                onClick={toggleModal}
-              >
-                Join the Waitlist
-              </Link>
+          
+  <button
+    onClick={() => {
+      setIsOpen(false); // Close the hamburger menu
+      toggleModal();    // Toggle the modal
+    }}
+    className="text-white"
+  >
+    Join the Waitlist
+  </button>
+
             </li>
             <li>
               <div className="flex gap-3 my-10 justify-center ">
