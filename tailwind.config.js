@@ -9,6 +9,10 @@ module.exports = {
         colors: {
           primary: "#7F7F58",
         },
+        screens: {
+          'custom': '300px',   
+          'custom-max': { 'max': '650px' }
+        },
       },
     },
     plugins: [],

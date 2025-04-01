@@ -75,3 +75,21 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+@media (max-width: 600px) {
+  .header-main {
+   position: relative;
+   height: 140px;
+  }
+  .logo-style {
+    position: absolute;
+    left: 30%;
+  }
+  .hammber-style {
+    position: absolute;
+    right: 3%;
+    top: 40%;
+  }
+}
+
+

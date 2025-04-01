@@ -48,7 +48,7 @@ function LandingPage() {
         <meta name="twitter:image" content="/images/Broily-og-image.png" />
       </Head>
 
-      <div className="bg-[#F7FF58] p-3 pb-20 sm:py-6 sm:px-10 md:px-20 flex justify-center">
+      <div className="bg-[#F7FF58] p-3 pb-15 sm:py-6 sm:px-10 md:px-20 flex justify-center">
         <div className="w-full max-w-6xl">
           <Header showInvestorsBtn={true} />
 
@@ -94,13 +94,13 @@ function LandingPage() {
                 <button
                   onClick={toggleModal}
                   className="mt-5 px-5 py-1 bg-[#F34213] text-white border border-[#021827] rounded-lg hover:bg-[#021827] transition cursor-pointer"
-                  style={{ fontFamily: "var(--font-comic)" }}
+                  style={{ fontFamily: "var(--font-concert)" }}
                 >
                   Notify Me
                 </button>
               </div>
 
-              {/* <div className="md:col-span-5 flex justify-center">
+              <div className="md:col-span-5 flex justify-center">
               <div className="relative w-40 sm:w-48 md:w-64 flex justify-center">
                 <Image
                   src="/images/MobileMockup.png"
@@ -109,43 +109,11 @@ function LandingPage() {
                   height={600}
                 />
               </div>
-            </div> */}
-              {/* 
-              <div className="md:col-span-5 md:hidden flex justify-center relative">
-                <div
-                  className="relative w-300 h-[100%] bg-contain bg-no-repeat bg-center "
-                  style={{
-                    backgroundImage:
-                      "url('/images/Mobile Mockup Without Logo (1).png')",
-                  }}
-                >
-                  <img
-                    onClick={toggleModal}
-                    src="/images/Broily Logo.png"
-                    alt="Broily"
-                    className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-30 h-30 md:hidden"
-                  />
-                </div>
-              </div> */}
-
-              <div className="md:col-span-5 hidden md:flex justify-center relative">
-                <div
-                  className="relative w-300 h-[100%] bg-contain bg-no-repeat bg-center"
-                  style={{
-                    backgroundImage:
-                      "url('/images/Mobile Mockup Without Logo (1).png')",
-                  }}
-                >
-                  <img
-                    onClick={toggleModal}
-                    src="/images/Broily Logo.png"
-                    alt="Broily"
-                    className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-30 h-30"
-                  />
-                </div>
-              </div>
             </div>
-            <div className="flex justify-center sm:justify-end w-full my-10 px-4">
+            
+
+            </div>
+            <div className="flex justify-center sm:justify-end w-full sm:my-10 mt-10 px-4">
               <div className="flex flex-row gap-4">
                 <img
                   src="/images/Apple AppStore.png"

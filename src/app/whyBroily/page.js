@@ -380,7 +380,7 @@ function WhyBroily() {
                 Participate
               </Link>
               <Link
-                href="mailto:support@broily.club"
+                href="mailto:investors@broily.club"
                 className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213]    text-left"
               >
                 Investors

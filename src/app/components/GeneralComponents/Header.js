@@ -9,16 +9,22 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa6";
-
+import NotifyMeModal from '../Modals/NotifyMeModal';
 const Header = ({showInvestorsBtn=false}) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+   
+  };
   return (
-    <div className="w-full flex  sm:flex-row justify-between items-center gap-4">
+    <div className="w-full flex justify-between items-center gap-4 header-main">
       <img
         src="/images/Broily Logo.png"
         alt="Logo"
-        className="h-35 w-35 sm:h-45 sm:w-45"
+        className="h-35 w-35 sm:h-45 sm:w-45 logo-style"
       />
       {/* 
     <Link
@@ -32,11 +38,11 @@ const Header = ({showInvestorsBtn=false}) => {
       </span>
     </Link> */}
 
-      <div className="flex items-center gap-4">
+      <div className={`flex items-center gap-4 hammber-style`}>
         {/* Investors Button - Visible only on desktop */}
         {showInvestorsBtn && (
           <Link
-            href="mailto:support@broily.club"
+            href="mailto:investors@broily.club"
             className="hidden md:block bg-[#021827] text-white px-4 py-2 hover:bg-[#F34213] transition"
             style={{ fontFamily: "var(--font-arialRounded)" }}
           >
@@ -64,7 +70,7 @@ const Header = ({showInvestorsBtn=false}) => {
           <ul className="text-left text-xl space-y-4 mt-3">
             <li>
               <Link
-                href="mailto:support@broily.club"
+                href="mailto:investors@broily.club"
                 onClick={() => setIsOpen(false)}
               >
                 Investors
@@ -94,9 +100,8 @@ const Header = ({showInvestorsBtn=false}) => {
             </li>
             <li>
               <Link
-                href="https://survey.broily.club"
-                target="_blank"
-                onClick={() => setIsOpen(false)}
+              
+                onClick={toggleModal}
               >
                 Join the Waitlist
               </Link>
@@ -146,6 +151,13 @@ const Header = ({showInvestorsBtn=false}) => {
           </p>
         </div>
       )}
+
+
+<NotifyMeModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        toggleModal={toggleModal}
+      />
     </div>
   );
 };
