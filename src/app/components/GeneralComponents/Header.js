@@ -4,28 +4,25 @@ import { useState } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedin,
-} from "react-icons/fa6";
-import NotifyMeModal from '../Modals/NotifyMeModal';
-const Header = ({showInvestorsBtn=false}) => {
+import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import NotifyMeModal from "../Modals/NotifyMeModal";
+const Header = ({ showInvestorsBtn = false }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
-   
   };
   return (
     <div className="w-full flex justify-between items-center gap-4 header-main">
-      <img
-        src="/images/Broily Logo.png"
-        alt="Logo"
-        className="h-35 w-35 sm:h-45 sm:w-45 logo-style"
-      />
+      <Link href="/">
+        <img
+          src="/images/Broily Logo.png"
+          alt="Logo"
+          className="h-35 w-35 sm:h-45 sm:w-45 logo-style"
+        />
+      </Link>
+
       {/* 
     <Link
       href="mailto:support@broily.club"
@@ -99,17 +96,15 @@ const Header = ({showInvestorsBtn=false}) => {
               </Link>
             </li>
             <li>
-          
-  <button
-    onClick={() => {
-      setIsOpen(false); // Close the hamburger menu
-      toggleModal();    // Toggle the modal
-    }}
-    className="text-white"
-  >
-    Join the Waitlist
-  </button>
-
+              <button
+                onClick={() => {
+                  setIsOpen(false); // Close the hamburger menu
+                  toggleModal(); // Toggle the modal
+                }}
+                className="text-white"
+              >
+                Join the Waitlist
+              </button>
             </li>
             <li>
               <div className="flex gap-3 my-10 justify-center ">
@@ -157,8 +152,7 @@ const Header = ({showInvestorsBtn=false}) => {
         </div>
       )}
 
-
-<NotifyMeModal
+      <NotifyMeModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         toggleModal={toggleModal}

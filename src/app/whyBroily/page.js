@@ -17,17 +17,18 @@ function WhyBroily() {
   };
   return (
     <>
-      <div className="bg-[#F7FF58] p-3 pb-20 sm:py-6 sm:px-10 md:px-20 text-[#021827]">
+      <div className="bg-[#F7FF58] p-3 pb-15 sm:py-6 sm:px-10 md:px-20 flex justify-center text-[#021827]">
         <div>
           <Header />
 
-          <h1
+        
+<div className="w-full max-w-6xl mt-5 px-4 sm:px-6 md:px-20">
+<h1
             className="text-3xl sm:text-4xl md:text-5xl mb-6 text-left"
             style={{ fontFamily: "var(--font-arialRounded)" }}
           >
-            Why Do Men Need Broily?
+            Why Does the World Need Broily?
           </h1>
-
           {/* Main Content */}
           <div className="mt-8 px-4 sm:px-6 md:px-2 py-5">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -135,14 +136,14 @@ function WhyBroily() {
                     className="my-10  text-3xl  text-[#021827]"
                     style={{ fontFamily: "var(--font-arialRounded)" }}
                   >
-                    Why It’s Significant and Timely
+                    Why It’s Important and Timely
                   </p>
                   <p className=" text-[#021827]">
                     The current crisis in male social disconnection isn’t just a
                     trend—it’s a mental health emergency. Reports show that
                     loneliness contributes to rising rates of depression,
                     anxiety, and even suicide among men, who are less likely to
-                    seek emotional support than women.
+                    seek emotional support.
                   </p>
                   <br />
                   <p>
@@ -341,7 +342,7 @@ function WhyBroily() {
                     {" "}
                     This isn’t just another platform—it’s a movement for men who
                     refuse to settle for shallow interactions, algorithm-driven
-                    content, and empty scrolling.
+                    content and empty scrolling.
                   </p>
                   <p>
                     {" "}
@@ -361,10 +362,10 @@ function WhyBroily() {
 
           <hr />
           <section className="px-5    text-left mt-10">
-            <p className="font-bold">
+            {/* <p className="font-bold">
               Join the waitlist now and be part of the first wave of men
               redefining what it means to connect online.
-            </p>
+            </p> */}
             <div className="flex flex-col sm:flex-row justify-center gap-4 my-5">
               <button
                 onClick={toggleModal}
@@ -393,6 +394,9 @@ function WhyBroily() {
               </Link>
             </div>
           </section>
+
+
+          </div>
         </div>
       </div>
 
