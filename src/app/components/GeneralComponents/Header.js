@@ -15,27 +15,16 @@ const Header = ({ showInvestorsBtn = false }) => {
   };
   return (
     <div className="w-full flex justify-between items-center gap-4 header-main">
-      <Link href="/">
+      <Link href="/" className="logo-style">
         <img
           src="/images/Broily Logo.png"
           alt="Logo"
-          className="h-35 w-35 sm:h-45 sm:w-45 logo-style"
+          className="h-35 w-35 sm:h-45 sm:w-45 "
         />
       </Link>
 
-      {/* 
-    <Link
-      href="mailto:support@broily.club"
-      className="bg-[#021827] text-white px-4 py-2 hover:bg-[#F34213] transition relative group cursor-pointer"
-      style={{ fontFamily: "var(--font-arialRounded)" }}
-    >
-      Investors
-      <span className="absolute left-20 w-full text-center text-xs text-white bg-[#021827] opacity-0 group-hover:opacity-100 transition p-1 rounded-md mt-1">
-        Why Broily? Click to find out.
-      </span>
-    </Link> */}
 
-      <div className={`flex items-center gap-4 hammber-style`}>
+      <div className={`flex items-center gap-4 hamburger-style`}>
         {/* Investors Button - Visible only on desktop */}
         {showInvestorsBtn && (
           <Link
@@ -51,7 +40,7 @@ const Header = ({ showInvestorsBtn = false }) => {
           className="text-2xl md:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <FaTimes /> : <FaBars />}
+          {isOpen ? <FaTimes color={"#F34213"} /> : <FaBars color={"#F34213"}  />}
         </button>{" "}
       </div>
 

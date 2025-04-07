@@ -83,8 +83,9 @@ function WhyBroily() {
                     src="/images/MobileMockup.png"
                     alt="Broily App"
                     width={300}
-                    height={500}
-                    className="w-full height-fit-content"
+                    height={600}
+                     className="w-full h-[600px] object-contain"
+                   // className="w-full height-fit-content"
                   />
                 </div>
               </div>
@@ -170,9 +171,12 @@ function WhyBroily() {
                       ways:
                     </p>
 
-                    <ol className="list-decimal pl-5 mt-2 space-y-4">
+                    <ul className="list-none pl-5 mt-2 space-y-4">
                       <li>
-                        They prioritize engagement metrics over real connection.
+                      <h3
+                          className="font-semibold"
+                          style={{ fontFamily: "var(--font-arialRounded)" }}
+                        > They prioritize engagement metrics over real connection. </h3>
                         <ul className="list-disc pl-5 mt-2 space-y-2">
                           <li>
                             Platforms like Instagram and Twitter/X reward
@@ -186,8 +190,11 @@ function WhyBroily() {
                         </ul>
                       </li>
 
-                      <li>
-                        They lack exclusivity and structured conversations.
+                      <li>  <h3
+                          className="font-semibold"
+                          style={{ fontFamily: "var(--font-arialRounded)" }}
+                        >
+                        They lack exclusivity and structured conversations.</h3>
                         <ul className="list-disc pl-5 mt-2 space-y-2">
                           <li>
                             Anyone can join, meaning bots, trolls, and bad
@@ -202,8 +209,11 @@ function WhyBroily() {
                       </li>
 
                       <li>
-                        They do not create spaces designed for how men naturally
-                        connect.
+                      <h3
+                          className="font-semibold"
+                          style={{ fontFamily: "var(--font-arialRounded)" }}
+                        > They do not create spaces designed for how men naturally
+                        connect.</h3>
                         <ul className="list-disc pl-5 mt-2 space-y-2">
                           <li>
                             Research shows that men often build friendships
@@ -218,7 +228,7 @@ function WhyBroily() {
                           </li>
                         </ul>
                       </li>
-                    </ol>
+                    </ul>
 
                     <p className="mt-4">
                       Without a space designed to meet their social and

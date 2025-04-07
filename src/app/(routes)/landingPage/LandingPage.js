@@ -56,7 +56,7 @@ function LandingPage() {
         <div className="w-full max-w-6xl">
           <Header showInvestorsBtn={true} />
 
-          <div className="items-center w-full max-w-6xl  mt-5 px-2 sm:px-4 md:px-20">
+          <div className="items-center w-full max-w-6xl  mt-1 md:mt-5 px-2 sm:px-4 md:px-20">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
               <div className="md:col-span-7 ">
                 {" "}
