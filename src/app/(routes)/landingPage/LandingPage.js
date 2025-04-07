@@ -24,11 +24,8 @@ function LandingPage() {
           name="description"
           content="Broily is an identity-verified, social space for men. No fake engagement, no distractions, just real conversations and meaningful connections."
         />
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, viewport-fit=cover"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+       
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"
@@ -101,7 +98,7 @@ function LandingPage() {
                 <div className="text-center md:text-left">
                   <button
                     onClick={toggleModal}
-                    className="mt-5 px-5 py-1  bg-[#F34213] text-white border border-[#021827] rounded-lg hover:bg-[#021827] transition cursor-pointer"
+                    className="mt-5 px-7 md:px-5 py-2 text-xl md:text-base md:py-1 bg-[#F34213] text-white border border-[#021827] rounded-lg hover:bg-[#021827] transition cursor-pointer"
                     // style={{ fontFamily: "var(--font-impact)" }}
                   >
                     Notify Me
@@ -146,6 +143,7 @@ function LandingPage() {
         {/* // hide on phone , footer content is in hamburger*/}
         <Footer />
       </div>
+      
       <NotifyMeModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

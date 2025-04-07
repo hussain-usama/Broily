@@ -45,7 +45,7 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
     // e.preventDefault();
     // if (!isFormValid) return; 
     if (!isFormValid) {
-      setFormError("⚠️ Please fill out all required fields before submitting.");
+      setFormError("⚠️ Please fill out/recheck all required fields before submitting.");
       return;
     }
 
@@ -88,7 +88,7 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
                 value={formData.name} 
                 onChange={handleChange} 
                 required 
-                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827]" 
+                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827] text-gray-700 bg-white autofill:bg-white autofill:text-gray-700" 
               />
             </div>
             <div>
@@ -98,7 +98,7 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
                 value={formData.birthYear} 
                 onChange={handleChange} 
                 required 
-                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827]"
+                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827] text-gray-700 bg-white"
               >
                 <option value="">Select Year</option>
                 {Array.from({ length: 83 }, (_, i) => 2024 - 18 - i).map((year) => (
@@ -114,7 +114,7 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
                 value={formData.country} 
                 onChange={handleChange} 
                 required 
-                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827]" 
+                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827] text-gray-700 bg-white autofill:bg-white autofill:text-gray-700" 
               />
             </div>
           </div>
@@ -129,7 +129,7 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
                 value={formData.email} 
                 onChange={handleChange} 
                 required 
-                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827]" 
+                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827] text-gray-700 bg-white autofill:bg-white autofill:text-gray-700" 
               />
             </div>
             <div>
@@ -139,7 +139,7 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
                 value={formData.gender} 
                 onChange={handleChange} 
                 required 
-                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827]"
+                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827] text-gray-700 bg-white"
               >
                 <option value="">Select</option>
                 <option value="male">Male</option>
@@ -155,7 +155,7 @@ const NotifyMeModal = ({ isOpen, onClose }) => {
                 value={formData.city} 
                 onChange={handleChange} 
                 required 
-                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827]" 
+                className="w-full p-2 border border-gray-300 rounded-md outline-none focus:border-[#021827] text-gray-700 bg-white autofill:bg-white autofill:text-gray-700" 
               />
             </div>
           </div>

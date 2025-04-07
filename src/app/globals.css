@@ -94,3 +94,15 @@ body {
 }
 
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* globals.css or component styles */
+/* body {
+  background-color: #FFF200 !important; 
+  padding-top: env(safe-area-inset-top) !important; 
+} */

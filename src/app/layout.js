@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script"; // Import Next.js Script
+import Script from "next/script"; 
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Broily – A Social Space That Puts You First",
-  description: "Broily is a verified, invite-only social space for men. No fake engagement, no distractions, just real conversations and meaningful connections.",
+  description:
+    "Broily is a verified, invite-only social space for men. No fake engagement, no distractions, just real conversations and meaningful connections.",
 };
 
 export default function RootLayout({ children }) {
@@ -22,7 +23,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Google Analytics */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FZJBDNFE28" />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-FZJBDNFE28"
+        />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -31,8 +35,18 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-FZJBDNFE28');
           `}
         </Script>
+        <Script id="viewport-meta" strategy="beforeInteractive">
+  {`
+    const meta = document.createElement('meta');
+    meta.name = 'viewport';
+    meta.content = 'width=device-width, initial-scale=1, viewport-fit=cover';
+    document.head.appendChild(meta);
+  `}
+</Script>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F7FF58] pt-[env(safe-area-inset-top)] min-h-screen`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+      >
         {children}
       </body>
     </html>

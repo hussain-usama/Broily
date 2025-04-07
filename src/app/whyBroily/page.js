@@ -134,7 +134,7 @@ function WhyBroily() {
 
                 <section>
                   <p
-                    className="my-10  text-3xl  text-[#021827]"
+                    className="my-10 font-bold w-full p-3 text-lg sm:text-3xl text-[#021827] "
                     style={{ fontFamily: "var(--font-arialRounded)" }}
                   >
                     Why It’s Important and Timely
@@ -161,7 +161,7 @@ function WhyBroily() {
                 <section>
                   <div>
                     <p
-                      className="my-10  text-3xl  text-[#021827]"
+                      className="my-10  font-bold w-full p-3 text-lg sm:text-3xl text-[#021827]"
                       style={{ fontFamily: "var(--font-arialRounded)" }}
                     >
                       Gaps in Existing Solutions
@@ -242,7 +242,7 @@ function WhyBroily() {
                 <section>
                   <div>
                     <p
-                      className="my-10  text-3xl  text-[#021827]"
+                      className="my-10 font-bold w-full p-3 text-lg sm:text-3xl text-[#021827]"
                       style={{ fontFamily: "var(--font-arialRounded)" }}
                     >
                       Broily – The Ideal Solution
@@ -379,7 +379,7 @@ function WhyBroily() {
             <div className="flex flex-col sm:flex-row justify-center gap-4 my-5">
               <button
                 onClick={toggleModal}
-                className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213]    text-left"
+                className="w-full sm:w-auto  text-white px-5 py-2 rounded bg-[#F34213]    text-left"
               >
                 Join Now!
               </button>
@@ -391,17 +391,18 @@ function WhyBroily() {
                 Participate
               </Link>
               <Link
-                href="mailto:investors@broily.club"
-                className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213]    text-left"
-              >
-                Investors
-              </Link>
-              <Link
                 href="https://survey.broily.club"
                 className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213]    text-left"
               >
                 Support
               </Link>
+              <Link
+                href="mailto:investors@broily.club"
+                className="w-full sm:w-auto bg-[#021827] text-white px-5 py-2 rounded hover:bg-[#F34213]    text-left"
+              >
+                Investors
+              </Link>
+              
             </div>
           </section>
 
