@@ -171,7 +171,7 @@ function WhyBroily() {
                       ways:
                     </p>
 
-                    <ul className="list-none pl-5 mt-2 space-y-4">
+                    <ul className="list-none  mt-2 space-y-4">
                       <li>
                       <h3
                           className="font-semibold"
