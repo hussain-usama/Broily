@@ -62,10 +62,10 @@ function LandingPage() {
                 {" "}
                 <div>
                   <h1
-                    className="text-4xl  md:text-7xl text-center md:text-left text-[#021827] leading-tight px-4 md:px-0"
+                    className="text-4xl  md:text-7xl text-center md:text-left text-[#021827] leading-tight px-2 md:px-0"
                     style={{ fontFamily: "var(--font-impact)" }}
                   >
-                    A Social Space That Puts You{" "}
+                    A Social Space  <br className="block md:hidden" />That Puts You{" "}
                     <span className="text-[#021827]">FIRST.</span>
                   </h1>
                   {/* image on mobile view , hidden on web  */}
