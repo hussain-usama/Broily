@@ -23,7 +23,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Google Analytics */}
-        <Script
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#F7FF58" />
+       {/*  <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-FZJBDNFE28"
         />
@@ -43,7 +45,7 @@ export default function RootLayout({ children }) {
     meta.content = '#F7FF58';
     document.head.appendChild(meta);
   `}
-        </Script>
+        </Script> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F7FF58] pt-[env(safe-area-inset-top)] min-h-screen`}
